@@ -1,0 +1,107 @@
+# TESLA-freeCodeCamp-
+#(New) Responsive Web Design (Product Landing)
+
+#index.html
+
+<header id="header">
+  <div class="logo">
+  <img id="header-img" src="" />
+  <svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 .1a9.7 9.7 0 007 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 007-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 006-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 00-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 13.8h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 14.1h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zM308.5 7h26a9.6 9.6 0 007-7h-40a9.6 9.6 0 007 7z" fill="currentColor"></path></svg>
+    </div>
+
+  <nav id="nav-bar">
+    <ul>
+      <li><a class="nav-link" href="#model3">Model 3</a></li>
+      <li><a class="nav-link" href="#modely">Model Y</a></li>
+      <li><a class="nav-link" href="#models">Model S</a></li>
+      <li><a class="nav-link" href="#modelx">Model X</a></li>
+    </ul>
+  </nav>
+</header>
+
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+  <p>Enter your email address for a chance to win a Tesla!</p>
+  <input id="email" type="email" name="email" placeholder="Email" />
+  <input id="submit" type="submit" name="email"/>
+</form>
+
+<section id="model3">
+  <iframe id="video" width="1664" height="777" src="https://www.youtube.com/embed/Q4VGQPk2Dl8" title="Tesla Unveils Model 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section id="modely">
+  <iframe width="1104" height="630" src="https://www.youtube.com/embed/6km4T6MGaJ8" title="Tesla Model Y Performance 2022 - FULL review in 4K | Exterior - Interior (Made in Germany)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section id="models">
+  <iframe width="1104" height="630" <iframe width="1104" height="630" src="https://www.youtube.com/embed/Ujp3q_aryRA" title="Model S Plaid at Nürburgring" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section id="modelx">
+  <iframe width="1104" height="630" src="https://www.youtube.com/embed/JFOOo3hEjw8" title="Essentials | Model X" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <link rel="stylesheet" href="styles.css">
+</section>
+
+#styles.css
+<style>
+body {
+   font-family: 'Roboto', sans-serif;
+  padding: 0 10px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+}
+
+svg {
+  width: 300px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+  width: 100%
+  padding-top: 56.25%; /*16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  margin-bottom: 20px;
+}
+
+iframe {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
